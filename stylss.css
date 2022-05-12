@@ -1,48 +1,76 @@
 body{
- background-color:  rgba(119, 133, 141, 0.695);   
- font-family: 'Oleo Script Swash Caps', cursive
+background-color: #000000;
 }
-
 #content{
-background-color: rgb(24, 113, 164);
-width:400px;
-margin: auto;
-text-align: center;
-padding: 8px;
-border-radius: 25px;
-background: linear-gradient(0deg , rgb(50, 169, 238) , rgba(164, 89, 24, 0.888), rgba(210, 180, 13, 0.695));
-}
-/*.glow ::before , .glow ::after{
-    content: '';
-    position: absolute;
-    left: -2px;
-    right: 2px;
-    background:linear-gradient(45deg, rgba(230, 10, 10, 0.876),gold, rgba(190, 186, 186, 0.876));
-background-size: 100%;    
-width: calc(100% + 20px);
-height: calc(100% + 4px);
-
-}
-*/
-
-#ball {
-    width: 340px;
-    height: 340px;
-    background: black;
-    color: white;
+    background-color: rgb(3 78 111);
+    width:400px;
     margin: auto;
-    margin-top: 10px;
-    border-radius: 100%;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 3px;
-}
-
-#anwer{
-    font-family: 'Oleo Script Swash Caps', cursive
-}
-#qustionArea{
-    border-radius: 5px;
-
-}
+    text-align: center;
+    padding: 8px;
+    border-radius: 25px;
+    }
+    
+    .glow {
+        position: relative;
+       
+        background: #111111;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .glow::before,
+    .glow::after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        width: calc(100% + 6px);
+        height: calc(100% + 6px);
+        top: -3px;
+        left: -3px;
+        background: linear-gradient(45deg,
+        #000000, #ffc400, #ffffff, #000000, #ffc400,
+        #000000, #ffc400, #f0f0f0, #000000, #ffc400
+        );
+        background-size: 300%;
+        animation: border 20s linear infinite;
+        border-radius: 25px;
+    }
+    
+    .glow::after {
+        filter: blur(30px);
+    }
+    
+    @keyframes border {
+    
+        0%, 100% {
+            background-position: 0 0;
+        }
+    
+        50% {
+            background-position: 300%;
+        }
+        
+    }
+    
+    #ball {
+        width: 340px;
+        height: 340px;
+        background: black;
+        color: white;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 3px;
+    }
+    
+    #anwer{
+        font-family: 'Oleo Script Swash Caps', cursive
+    }
+    #qustionArea{
+        border-radius: 5px;
+    
+    }
