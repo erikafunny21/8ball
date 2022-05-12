@@ -6,7 +6,7 @@ let button = document.querySelector('button');
 let answer = document.querySelector('#answer');
 button.addEventListener('click', function() {
  
-let randomNumber = generate_random(5);
+let randomNumber = generate_random(10);
 
 let answerText = "";
 
@@ -19,9 +19,35 @@ else if (randomNumber == 1) {
 else if (randomNumber == 2) {
     answerText = "Yes";
 }
+else if (randomNumber == 3){
+    answerText = "It is decidedly so"
+}
+
+
+
+
+
+
+}
 else {
     answerText = " Ask again later";
 }
 answer.innerHTML = answerText;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
