@@ -10,12 +10,20 @@ margin: auto;
 text-align: center;
 padding: 8px;
 border-radius: 25px;
-background: linear-gradient(0deg , rgb(50, 169, 238) , rgba(164, 89, 24, 0.888), rgba(210, 180, 13, 0.695)) ,rgb(179, 97, 97);
+background: linear-gradient(0deg , rgb(50, 169, 238) , rgba(164, 89, 24, 0.888), rgba(210, 180, 13, 0.695));
 }
+/*.glow ::before , .glow ::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    right: 2px;
+    background:linear-gradient(45deg, rgba(230, 10, 10, 0.876),gold, rgba(190, 186, 186, 0.876));
+background-size: 100%;    
+width: calc(100% + 20px);
+height: calc(100% + 4px);
 
-
-
-
+}
+*/
 
 #ball {
     width: 340px;
