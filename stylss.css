@@ -10,8 +10,12 @@ margin: auto;
 text-align: center;
 padding: 8px;
 border-radius: 25px;
-
+background: linear-gradient(0deg , rgb(50, 169, 238) , rgba(164, 89, 24, 0.888), rgba(210, 180, 13, 0.695)) ,rgb(179, 97, 97);
 }
+
+
+
+
 
 #ball {
     width: 340px;
