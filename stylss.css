@@ -1,0 +1,36 @@
+body{
+ background-color:  rgba(119, 133, 141, 0.695);   
+ font-family: 'Oleo Script Swash Caps', cursive
+}
+
+#content{
+background-color: rgb(24, 113, 164);
+width:400px;
+margin: auto;
+text-align: center;
+padding: 8px;
+border-radius: 25px;
+
+}
+
+#ball {
+    width: 340px;
+    height: 340px;
+    background: black;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+}
+
+#anwer{
+    font-family: 'Oleo Script Swash Caps', cursive
+}
+#qustionArea{
+    border-radius: 5px;
+
+}
